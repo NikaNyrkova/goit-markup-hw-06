@@ -192,17 +192,17 @@ body {
 
   color: var(--white);
   background-color: var(--accent-color);
+  cursor: pointer;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .btn-act:hover,
-.btn-act:focus {
+.btn:focus,
+.btn:hover {
   color: var(--accent-color);
-  background-color: (var(--white);
-
-} */
+  background-color: var(--white);
+}
 
 .section-hero {
   padding-top: 200px;
@@ -588,9 +588,6 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .form-btn-text {
-} */
-
 .subscribe-send-svg {
   width: 24px;
   height: 24px;
@@ -628,7 +625,7 @@ body {
   padding-bottom: 60px;
   background-color: var(--dark-bg);
 }
-
+/* BACKDROP MODAL */
 .backdrop {
   position: fixed;
   top: 0;
@@ -827,4 +824,35 @@ body {
 .btn-send {
   display: flex;
   justify-content: center;
+}
+
+/* .form-check {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */
+
+.label-agreement {
+}
+
+.form-check {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check-box {
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/modal-icon/icon-check-no.svg);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-check:checked + .check-box {
+  background-image: url(../images/modal-icon/icon-check.svg);
+}
+
+.form-check:focus + .check-box {
+  background-color: var(--accent-color);
 }

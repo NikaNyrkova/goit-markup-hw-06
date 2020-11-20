@@ -376,7 +376,7 @@
           <div class="form-field">
             <label for="user-name" class="label-field">Имя</label>
             <div class="position-svg">
-              <input type="text" name="user-name" id="user-name" class="form-input">
+              <input type="text" name="user-name" id="user-name" class="form-input" required>
               <svg class="form-svg">
               <use href="./images/modal-icon/sprite-modal.svg#person"></use>
             </svg>
@@ -387,7 +387,7 @@
           <div class="form-field">
             <label for="phone" class="label-field">Телефон</label>
             <div class="position-svg">
-              <input type="tel" name="phone" id="phone" class="form-input">
+              <input type="tel" name="phone" id="phone" class="form-input" required>
               <svg class="form-svg">
                 <use href="./images/modal-icon/sprite-modal.svg#phone"></use>
               </svg>
@@ -397,7 +397,7 @@
           <div class="form-field">
             <label for="email" class="label-field">Почта</label>
             <div class="position-svg">
-              <input type="email" name="email" id="email" class="form-input">
+              <input type="email" name="email" id="email" class="form-input" required>
               <svg class="form-svg">
                 <use href="./images/modal-icon/sprite-modal.svg#email"></use>
               </svg>
@@ -410,7 +410,8 @@
           </div>
 
           <div class="agreement-field">
-            <input type="checkbox" name="agreement" id="agreement" class="form-check">
+            <input type="checkbox" name="agreement" id="agreement" class="form-check" required>
+            <span class="check-box"></span>
             <label for="agreement" class="label-agreement">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
           </div>
           
