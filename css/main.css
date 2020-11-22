@@ -569,6 +569,7 @@ body {
   justify-content: center;
   width: 200px;
   height: 50px;
+  margin-left: 12px;
 
   font-family: inherit;
   font-weight: 700;
@@ -618,6 +619,7 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer {
@@ -804,55 +806,49 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.agreement-field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+.check-opt {
   margin-bottom: 30px;
 }
 
-.label-agreement {
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
+.check-lable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  margin-left: 8px;
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  margin-right: 9px;
+}
+
+.checkbox:checked + .check-icon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/modal-icon/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox:focus + .check-icon {
+  border-color: var(--accent-color);
+}
+
+.check-icon + a {
+  margin-left: 6px;
 }
 
 .btn-send {
   display: flex;
   justify-content: center;
-}
-
-/* .form-check {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-} */
-
-.label-agreement {
-}
-
-.form-check {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.check-box {
-  width: 16px;
-  height: 15px;
-  background-image: url(../images/modal-icon/icon-check-no.svg);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-check:checked + .check-box {
-  background-image: url(../images/modal-icon/icon-check.svg);
-}
-
-.form-check:focus + .check-box {
-  background-color: var(--accent-color);
 }
